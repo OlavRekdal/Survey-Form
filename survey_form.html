@@ -14,22 +14,23 @@
 <hr>
 
 <form id="survey-form">
-    Enter your name:
-    <input id="name" type="text" /> 
-        <br>
-    Enter your e-mail: 
-    <input id="email" type="text" />
-    <!--The email need to be formatted correctly!-->
-        <br>
-    Enter your age: 
-    <input id="number" type="num">
-        <br>
-    <input id="dropdown" type="dropdown">
 
+    <div>
+        <label id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required/> 
+    </div>
+    
+    <div>
+        <label id="email-label">E-mail</label>
+        <input id="email" type="email" placeholder="Enter your email" required/>
+    </div>    
 
+    <div>
+        <label id="number-label">Age</label>
+        <input id="number" type="number" placeholder="Enter your age" min="10" max="99" required>
+    </div>
+    
 
-
-        <br>
     <input id="submit" type="submit" value="Submit"></input>
 
 </form>
@@ -44,16 +45,7 @@
 
 
 <!---
-    User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
 
-
-User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
-
-User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
-
-User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
-
-User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.
 
 User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
 
