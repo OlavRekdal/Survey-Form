@@ -1,7 +1,7 @@
 <html>
 
 <head>
-
+    <link rel="stylesheet" href="survey_form.css">
     
 </head>
 
@@ -29,10 +29,50 @@
         <label id="number-label">Age</label>
         <input id="number" type="number" placeholder="Enter your age" min="10" max="99" required>
     </div>
+
+    <div>
+        <p>How is your mood?</p>
+        <select id="dropdown" name="role" required>
+            <option name="mood-value" value="1">1</option>
+            <option name="mood-value" value="2">2</option>
+            <option name="mood-value" value="3">3</option>
+            <option name="mood-value" value="4">4</option>
+            <option name="mood-value" value="5">5</option>
+        </select>
+    </div>
+
+    <div>
+        <p>Do you like this page?</p>
+        <label>
+            <input name="like_YN" value="Yes" type="radio">Yes
+        </label>
+        <label>
+            <input name="like_YN" value="No" type="radio">No
+        </label>
+    </div>
     
+    <div>
+        <p>What do you think I need to work on?</p>
+        <label>
+            <input value="HTML" type="checkbox">HTML
+        </label>
+        <label>
+            <input value="CSS" type="checkbox">CSS
+        </label>
+        <label>
+            <input value="Java" type="checkbox">Java
+        </label>
+    </div>
 
-    <input id="submit" type="submit" value="Submit"></input>
+    <div>
+        <textarea id="comments" placeholder="Do you have comments: ">
+            </textarea>
+    </div>
 
+    <div>
+        <input id="submit" type="submit" value="Submit"></input>
+    </div>
+    
 </form>
 
 </body>
@@ -43,17 +83,3 @@
 
 
 
-
-<!---
-
-
-User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
-
-User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
-
-User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
-
-User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
-
-
--->
